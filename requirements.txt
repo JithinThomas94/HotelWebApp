@@ -1,8 +1,9 @@
-Flask==1.1.2
-Flask_Uploads==0.2.1
+pyOpenSSL
+gunicorn
 Flask_WTF==0.14.3
+Flask_Uploads==0.2.1
 WTForms==2.3.3
+Flask==1.1.2
 Flask_SQLAlchemy==2.5.1
 Flask_Bcrypt==0.7.1
 secrets==1.0.2
-gunicorn==20.1.0
