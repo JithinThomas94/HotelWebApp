@@ -136,7 +136,7 @@ sniffio==1.2.0
 soupsieve==2.2
 SQLAlchemy==1.4.2
 SQLAlchemy-Utils==0.37.2
-tcod==12.7.2
+tcod
 tdl==6.0.0
 tensorboard==1.8.0
 termcolor==1.1.0
