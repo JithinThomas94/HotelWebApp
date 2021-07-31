@@ -6,4 +6,5 @@ WTForms==2.3.3
 Flask==1.1.2
 Flask_SQLAlchemy==2.5.1
 Flask_Bcrypt==0.7.1
+werkzeug==0.16.0
 #secrets
