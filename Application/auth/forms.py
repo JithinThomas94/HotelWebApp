@@ -2,7 +2,7 @@
 Login and Registrationn forms
 """
 from wtforms import Form, PasswordField, validators, SubmitField, StringField, SelectField
-
+import email_validator
 
 class Registration(Form):
     """ Defines the registration form
