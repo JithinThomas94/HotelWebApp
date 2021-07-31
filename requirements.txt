@@ -7,3 +7,4 @@ Flask_Uploads==0.2.1
 gunicorn
 -e git://github.com/maxcountryman/flask-uploads.git#egg=elasticutils
 email-validator
+werkzeug==2.0.1
