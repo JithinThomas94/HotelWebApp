@@ -2,6 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_uploads import IMAGES, UploadSet, configure_uploads, patch_request_class
+from werkzeug.utils import secure_filename
+from werkzeug.datastructures import  FileStorage
 import os
 
 basedir=os.path.abspath(os.path.dirname(__file__)) #gets the base direcotry to our app.
