@@ -4,7 +4,7 @@ from Application import app, photos, db
 from ..decorators import login_required, admin_required
 from .forms import Add_Listing, Book
 from Application.models import Listing, Booking,Customer
-import secrets
+#import secrets
 
 @app.route("/", methods=["POST", "GET"])
 def home():
@@ -20,9 +20,9 @@ def add_listing():
         price=form.price.data
         discount=form.discount.data
         desc=form.description.data
-        image_1=photos.save(request.files.get('image_1'), name=secrets.token_hex(10)+".")
-        image_2=photos.save(request.files.get('image_2'), name=secrets.token_hex(10)+".")
-        image_3=photos.save(request.files.get('image_3'), name=secrets.token_hex(10)+".")
+        image_1=photos.save(request.files.get('image_1'), name=None)
+        image_2=photos.save(request.files.get('image_2'), name=None)
+        image_3=photos.save(request.files.get('image_3'), name=None)
         #add the listing data to the addlisting table in the database
         add_listing=Listing(name=name, price=price, discount=discount,description=desc,image_1=image_1, image_2=image_2, image_3=image_3)
         flash(f"The product {name} was added succesfully.", "success")
