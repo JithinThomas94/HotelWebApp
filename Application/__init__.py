@@ -7,7 +7,7 @@ import os
 basedir=os.path.abspath(os.path.dirname(__file__)) #gets the base direcotry to our app.
 
 app = Flask(__name__) #creates a flask app
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://zjajewpxyktqla:4a454463b4983eab7cceda0afb1692da5d889d933f79be2277562907cbe4a93c@ec2-54-228-9-90.eu-west-1.compute.amazonaws.com:5432/d8pcva4p4bur7f' #configure myshop database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db' #configure myshop database
 app.config['SQLALCHEMY_BINDS'] = {
     'data':'sqlite:///dataDB.db',
     'bookings':'sqlite:///bookingsDB.db',
